@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Landing Page</title>
+</head>
+
+<style>
+
+    *, ::after,::before{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-y: hidden;
+    }
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* width: 99%; */
+        padding: 0 20px;
+        height: 75px;
+        gap: 0px;
+        opacity: 0px;
+        background: #097B48;
+        overflow-x: hidden;
+    }
+
+.right_Header button{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: left;
+    padding: 7px 15px;
+}
+.left_Header{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.left_Header p{
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+}
+
+.landing-content{
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    /* width: 80%; */
+    /* margin: 150px auto; */
+}
+
+.landing-content h3{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.3px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.landing-content p{
+    font-family: Inter;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 28.65px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-top: 20px;
+    width: 65%;
+}
+
+.landing-content button{
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.65px;
+    letter-spacing: 0.03em;
+    margin-top: 40px;
+    font-family: Roboto;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px;
+    outline: none;
+    border-color: transparent;
+    height: Fixed (69px);
+}
+
+main{
+    background-image: url("./assets/images/bgBoy.svg");
+    height: 81vh;
+    overflow-y: hidden;
+}
+
+
+main {
+    height: 81vh;
+    overflow-y: hidden;
+    background-size:cover;
+    /* background-position: 50% 25%; */
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    animation: slideBackground 25s linear infinite; 
+}
+
+main {
+    height: 81vh;
+    overflow-y: hidden;
+    background-size: cover;
+    animation: slideBackground 20s linear infinite; /* Set total duration and loop */
+}
+
+/* Keyframes for sliding background images */
+@keyframes slideBackground {
+    0% {
+        background-image: url("./assets/images/bgBoy.svg");
+        background-position: 0 0;
+    }
+    25% {
+        background-image: url("./assets/images/bg2.png");
+        background-position: 100% 0; /* Slide to the right */
+    }
+    50% {
+        background-image: url("./assets/images/bg3.png");
+        background-position: 0 0; /* Slide back from the left */
+    }
+    75% {
+        background-image: url("./assets/images/bg4.png");
+        background-position: 100% 0; /* Slide to the right again */
+    }
+    100% {
+        background-image: url("./assets/images/bgBoy.svg"); /* Loop back to the first image */
+        background-position: 0 0;
+    }
+}
+
+
+footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #097B48;
+    opacity:0.84 ;
+    height: 55px;
+    font-family: Roboto;
+    padding: 0 15px;
+}
+
+footer .left_footer  img{
+   margin-bottom: -30px;
+}
+
+</style>
+<body>
+        <header>
+            <div class="left_Header">
+                <img src="./assets/images/logo.svg" alt="" srcset="">
+                <p>Ehi Centre</p>
+            </div>
+            <div class="right_Header">
+                <button>Sign Out</button>
+            </div>
+
+        </header>
+
+        <main>
+            <div class="landing-content">
+                <h3>Welcome To Ehi Centre Admin Dashboard</h3>
+                <p>Empower Your Impact: Manage Your Finance, User Biodata, And Projects With Ease.Your NGO's Mission, Simplified.</p>
+                <button>Continue to dashboard</button>
+            </div>
+        </main>
+
+        <footer>
+            <div class="left_footer">
+                <img src="./assets//images/hanslogo.svg" alt="" srcset="">
+                <p>Powered by Hans Technology</p>
+            </div>
+            <div class="middle_footer">
+                <p>copyright&#64;ehicentre2024</p>
+            </div>
+            <div class="right_footer"></div>
+
+        </footer>
+
+
+</body>
+</html>
